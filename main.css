@@ -1,7 +1,12 @@
 * {
     box-sizing: border-box;
 }
-
+h1,h2,h3,
+ul,ol, 
+p,
+img {
+    margin-bottom: 1.5rem;
+}
 body {
   background: url(assets/wedding-landing-background.png) repeat center;
   font-family: 'Libre Baskerville', sans-serif;
@@ -19,7 +24,17 @@ body {
   padding: .5rem 1rem;
   text-align: center;
 }
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+h2 {
+  font-size: 3rem;
+}
 
+h3 {
+  font-size: 1.5rem;
+}
 a {
   text-decoration: none;
   color: #bd806e;
@@ -36,10 +51,6 @@ a:hover {
     height: 100vh;
     width: 100vh;
     }
-.cover h1{
-    font-family: 'Great Vibes', cursive;
-    margin-bottom: 1.5rem;
-}
 .hero-text-wrapper {
   display: table-cell;
   vertical-align: middle;
@@ -54,7 +65,7 @@ a:hover {
 .hero-text h1 {
   font-size: 3.15rem;
   color: #d2ba87;
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .tagline {
   font-size: 1.25rem;
@@ -86,20 +97,12 @@ a:hover {
   margin: 0 .5rem;
 }
 /*LOCATIONS STYLES*/
-.locations h2{
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
 .blurb img {
   height: 7.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .blurb h3 {
   font-weight: 700;
-  font-size: 1.5rem;  
-  margin-bottom: 1.5rem;
 }
 
 .blurb div {
@@ -126,32 +129,21 @@ a:hover {
 }
 
 .program h2 {
+  font-family: 'Great Vibes', cursive;
   margin-top: 1rem; 
   text-align: center;
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
 }
 
 .program p {
   font-style: italic;
-  margin-bottom: 1.5rem;
 }
 .program ul {
   letter-spacing: .025rem;
-  margin-bottom: 1.5rem;
 }
 
 /*GIFTS STYLES*/
-.gifts h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-
-}
 .gifts img {
   height: 7.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .gifts p:last-child {   
@@ -166,14 +158,10 @@ a:hover {
 }
 .faq h2 {
     margin-top: 1rem;
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
 }
 .faq p {
   font-family: 'Muli', sans-serif;
   text-align: left;
-  margin-bottom: 1.5rem;
 }
 .question-group::after {
   content: "";
@@ -191,12 +179,6 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* CONTACT STYLES */
-.contact h2{
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;  
-  margin-bottom: 1.5rem;
-}
 /* FOOTER STYLES */
 
 footer {
@@ -224,7 +206,8 @@ footer small {
 }
 @media (min-width: 768px) {
 
-.cover { url(assets/wedding-landing-cover.jpg) no-repeat center/cover;
+.cover { url(assets/wedding-landing-background.png)
+    background: no-repeat, cover;
     width: 100%;
   }
 
@@ -273,7 +256,7 @@ footer small {
 
   .program-wrapper {
     width: 30vw;
-    margin: auto;
+    margin: 0 auto;
   }
 
 }
